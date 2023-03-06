@@ -17,7 +17,7 @@ In contrast, the trie method allows us to exploit the common prefix structure of
 
 # Complexity
 - Time complexity:
-The time complexity of this code is $$O(MN)$$, where $$M$$ is the length of the shortest word and $$N$$ is the number of words in the input array. This is because the trie is constructed by iterating over each letter in each word in the input array, and finding the longest common prefix requires iterating over each letter in the shortest word, each of which takes $$O(1)$$ time in the worst case.
+The time complexity of this code is $O(MN)$, where $M$ is the length of the shortest word and $N$ is the number of words in the input array. This is because the trie is constructed by iterating over each letter in each word in the input array, and finding the longest common prefix requires iterating over each letter in the shortest word, each of which takes $O(1)$ time in the worst case.
 
 - Space complexity:
-The space complexity of this code is $$O(MN)$$, where $$M$$ is the length of the shortest word and $$N$$ is the number of words in the input array. This is because the trie data structure is constructed by creating a new node for each letter in each word in the input array, resulting in $$M*N$$ nodes in the worst case.
+The space complexity of this code is $O(MN)$, where $M$ is the length of the shortest word and $N$ is the number of words in the input array. This is because the trie data structure is constructed by creating a new node for each letter in each word in the input array, resulting in $M*N$ nodes in the worst case.
