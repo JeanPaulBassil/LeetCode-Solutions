@@ -1,4 +1,6 @@
+
 public class MaximumSubarray {
+
     public int maxSubArray(int[] nums) {
         int len = nums.length;
         if (len == 1) return nums[0];
@@ -9,11 +11,13 @@ public class MaximumSubarray {
         }
         return max;
     }
-
     public static void main(String[] args) {
         MaximumSubarray ms = new MaximumSubarray();
-        System.out.println(ms.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
-        System.out.println(ms.maxSubArray(new int[]{1}));
-        System.out.println(ms.maxSubArray(new int[]{5, 4, -1, 7, 8}));
+        System.out.println(ms.maxSubArray(new int[]{1, -2, 3, -2}));
+        System.out.println(ms.maxSubArray(new int[]{5, -3, 5}));
+        System.out.println(ms.maxSubArray(new int[]{-3, -2, -3}));
+        System.out.println(ms.maxSubArray(new int[]{-2, -3, -1}));
+        System.out.println(ms.maxSubArray(new int[]{2, -2, 2, 7, 8, 0}));
+
     }
 }
